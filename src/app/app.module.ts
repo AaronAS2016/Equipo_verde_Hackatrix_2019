@@ -16,11 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     OnboardingHeaderComponent,
     OnboardingContainerComponent,
-<<<<<<< HEAD
-    OnboardingComponent
-=======
+    OnboardingComponent,
     OnboardingStep1Component
->>>>>>> ef7ef1784ed09a0b5f77dd3f9005bdba9e61acab
   ],
   imports: [
     BrowserModule,
