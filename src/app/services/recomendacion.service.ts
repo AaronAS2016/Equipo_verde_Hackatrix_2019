@@ -10,10 +10,6 @@ export class RecomendacionService {
 
   public GetRecomendaciones(): RecomendacionModel[] {
     return [
-      // new RecomendacionModel({ id: 1, titulo: 'Teatros Clásicos', descripcion: '', reviews: 20, estrellas: 4, imagen: 'http://fundaciontcolon.org.ar/documentos/15/230_1sala.def.jpg', restricciones: [{ id: 1, descripcion: 'Ver', icono: '' }] }),
-      // new RecomendacionModel({ id: 2, titulo: 'Musica Urbana', descripcion: '', reviews: 15, estrellas: 5, imagen: 'https://fotos.perfil.com/2019/01/23/trim/728/500/dia-de-la-musica-01232019-03-599852.jpg', restricciones: [] }),
-      // new RecomendacionModel({ id: 3, titulo: 'Pizzerias de antaño', descripcion: '', reviews: 6, estrellas: 4, imagen: 'https://buenosairesconnect.com/wp-content/uploads/2017/07/pizzaporte%C3%B1a.jpg', restricciones: [] }),
-
       new RecomendacionModel(
         {
           id: 1,
@@ -36,7 +32,7 @@ export class RecomendacionService {
         descripcion: "",
         reviews: 16,
         estrellas: 4,
-        imagen: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiLmLHE14XlAhX5HrkGHbd2CmMQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.musicnotes.com%2Fpiano%2F&psig=AOvVaw19DQqQxZVzwUoRDzGxPUzy&ust=1570384298537443",
+        imagen: "https://www.musicnotes.com/images2/promos/store/900x520_piano-min.jpg",
         restricciones: [
           {
             id: 1,
@@ -53,7 +49,7 @@ export class RecomendacionService {
         descripcion: "",
         reviews: 35,
         estrellas: 4,
-        imagen: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwipx7WS2YXlAhXHHrkGHW7eDqgQjRx6BAgBEAQ&url=http%3A%2F%2Fwww.telam.com.ar%2Fnotas%2F201709%2F206930-la-pizzeria-imperio-chacarita-fue-elegida-como-la-mejor-de-la-avenida-corrientes-en-la-sexta-maraton-muza5k.html&psig=AOvVaw2-2cHJj2Ckr3zc49H_MHCj&ust=1570384729272914",
+        imagen: "http://www.telam.com.ar/advf/imagenes/2017/09/59c8e08548cd1_645x362.jpg",
         restricciones: [
           {
             id: 1,
@@ -70,7 +66,7 @@ export class RecomendacionService {
         descripcion: "",
         reviews: 76,
         estrellas: 5,
-        imagen: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiM5fLe2YXlAhXYGrkGHXIWAzsQjRx6BAgBEAQ&url=https%3A%2F%2Fgestion.pe%2Ftendencias%2Fperu-vs-argentina-estadio-llama-bombonera-220202-noticia%2F&psig=AOvVaw1JAEC2I0nNUe0fM9rlFUop&ust=1570384881978298",
+        imagen: "https://gestion.pe/resizer/FtSatk9L8kY5_CqBLqTtUcpdUxU=/940x569/smart/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/DL7IHELIMRB3HGAFZZGNQLNY5A.jpg",
         restricciones: [
           {
             id: 1,
@@ -87,7 +83,7 @@ export class RecomendacionService {
         descripcion: "",
         reviews: 54,
         estrellas: 5,
-        imagen: "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwji1pKQ2oXlAhV9G7kGHRyYDpEQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.tripadvisor.co.za%2FLocationPhotoDirectLink-g312741-d4405613-i233398753-Photo_Tours_Buenos_Aires-Buenos_Aires_Capital_Federal_District.html&psig=AOvVaw3dDJqpDveS2g7MaQqQrvX9&ust=1570384980267951",
+        imagen: "https://media-cdn.tripadvisor.com/media/photo-s/0d/e9/61/e1/emir-evelyn-at-la-boca.jpg",
         restricciones: [
           {
             id: 1,
@@ -98,13 +94,14 @@ export class RecomendacionService {
           { id: 6, descripcion: 'Otros', icono: '' }
         ]
       }),
+
       new RecomendacionModel({
         id: 6,
         titulo: "Parques Historicos",
         descripcion: "",
         reviews: 33,
         estrellas: 3,
-        imagen: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjF_cq32oXlAhWbF7kGHS2RCWsQjRx6BAgBEAQ&url=https%3A%2F%2Fturismo.buenosaires.gob.ar%2Fen%2Fatractivo%2Fparque-de-los-ni%25C3%25B1os&psig=AOvVaw0icYIZEw8Ge1HIc30r7q8G&ust=1570385071910075",
+        imagen: "https://turismo.buenosaires.gob.ar/sites/turismo/files/parque_ninosa.jpg",
         restricciones: [
           {
             id: 1,
