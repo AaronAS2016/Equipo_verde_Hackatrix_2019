@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
+import { RestriccionesService } from 'src/app/services/restricciones.service';
+import { RestriccionModel } from '../models/restriccion.model';
+import {SelectionModel} from '@angular/cdk/collections';
 
 @Component({
   selector: 'app-onboarding-step1',
@@ -7,10 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OnboardingStep1Component implements OnInit {
 
-  constructor() { }
+  constructor(
+    private restriccionesService:RestriccionesService,
+  ) { }
 
+
+  @Output() selecccion =  new EventEmitter<Array<RestriccionModel>>();
+  restricciones: Array<RestriccionModel>;
+  checklistSelection = new SelectionModel<RestriccionModel>();
   ngOnInit() {
-    
+    this.restricciones = this.restriccionesService.GetRestricciones();
   }
 
 }

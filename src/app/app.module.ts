@@ -8,19 +8,24 @@ import { OnboardingHeaderComponent } from './components/onboarding-header/onboar
 import { OnboardingContainerComponent } from './components/onboarding-container/onboarding-container.component';
 import { OnboardingStep1Component } from './components/onboarding-step1/onboarding-step1.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CommonModule } from '@angular/common';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     OnboardingHeaderComponent,
     OnboardingContainerComponent,
-    OnboardingStep1Component
+    OnboardingStep1Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    MatCheckboxModule,
+    BrowserAnimationsModule,
+    CommonModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
