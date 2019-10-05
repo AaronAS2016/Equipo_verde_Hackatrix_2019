@@ -22,13 +22,7 @@ export class GustosService {
     {id:11,descripcion:'Arte callejero',imagen:'/assets/gastronomia.jpg'},
     {id:12,descripcion:'Audiovisual',imagen:'/assets/artecallejero.jpg'},
     {id:13,descripcion:'Juegos',imagen:'/assets/artecallejero.jpg'},
-    {id:14,descripcion:'Teatro',imagen:'/assets/gastronomia.jpg'},
-    {id:15,descripcion:'mock',imagen:'/assets/gastronomia.jpg'},
-    {id:16,descripcion:'mock',imagen:'/assets/artecallejero.jpg'},
-    {id:17,descripcion:'mock',imagen:'/assets/gastronomia.jpg'},
-    {id:18,descripcion:'mock',imagen:'/assets/artecallejero.jpg'},
-    {id:19,descripcion:'mock',imagen:'/assets/artecallejero.jpg'},
-    {id:20,descripcion:'mock',imagen:'/assets/artecallejero.jpg'},
+    {id:14,descripcion:'Teatro',imagen:'/assets/gastronomia.jpg'}
   ]
   public getGustos():Array<GustoModel>{
     return this.gustos;

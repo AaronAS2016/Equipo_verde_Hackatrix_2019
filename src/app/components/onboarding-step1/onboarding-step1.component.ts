@@ -17,13 +17,19 @@ export class OnboardingStep1Component implements OnInit {
 
   @Output() seleccion =  new EventEmitter<Array<RestriccionModel>>();
   restricciones: Array<RestriccionModel>;
-  checklistSelection = new SelectionModel<RestriccionModel>();
+  checklistSelection = new Array<RestriccionModel>();
   ngOnInit() {
     this.restricciones = this.restriccionesService.GetRestricciones();
   }
 
-  selecciono(){
-    this.seleccion.emit(this.checklistSelection.selected);
+  selecciono(restriccion){
+    var index = this.checklistSelection.findIndex(g => g.id == restriccion.id)
+    if(index > -1) {
+      this.checklistSelection.splice(index,1);
+    }
+    else{
+      this.checklistSelection.push(restriccion);
+    }
+    this.seleccion.emit(this.checklistSelection)
   }
-
 }

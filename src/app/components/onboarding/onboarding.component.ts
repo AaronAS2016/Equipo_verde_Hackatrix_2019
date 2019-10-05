@@ -38,11 +38,12 @@ export class OnboardingComponent implements OnInit {
   handleClickContine()  {
     this.actualStep++;
     if(this.actualStep > this.MAX_STEAPS){
-      this.router.navigate(["/"]);
+      this.router.navigate(["/home"]);
     }
   }
 
   pushSelections(e){
+    console.log(e);
     this.perfilService.pushSelection(this.actualStep,e)
   }
 

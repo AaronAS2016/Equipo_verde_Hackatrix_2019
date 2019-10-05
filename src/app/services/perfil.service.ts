@@ -8,6 +8,7 @@ export class PerfilService {
   perfil = {}
 
   pushSelection(key, selection){
+    console.log(key,selection);
     Object.assign({}, this.perfil, this.perfil[key] = selection);
   }
 
