@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-onboarding-container',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./onboarding-container.component.css']
 })
 export class OnboardingContainerComponent implements OnInit {
+
+  @Input() title: string;
+  @Input() stepStart: number;
+  @Input() stepEnd: number;
 
   constructor() { }
 

@@ -1,0 +1,25 @@
+.onboarding-container{
+  width: 100%;
+}
+.onboarding-nav{
+  background: #008FF7;
+  width: 100%;
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 20px 20px 0 0;
+  color: white;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.onboarding-nav-title{
+  font-weight: bold;
+  letter-spacing: 1px;
+  grid-column:  2 / 3;
+}
+
+
+.onboarding-steps{
+  justify-self: center;
+}
