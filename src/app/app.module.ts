@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { OnboardingComponent } from './dialogs/onboarding/onboarding.component';
 import { OnboardingHeaderComponent } from './components/onboarding-header/onboarding-header.component';
 import { OnboardingContainerComponent } from './components/onboarding-container/onboarding-container.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OnboardingContainerComponent } from './components/onboarding-container/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
