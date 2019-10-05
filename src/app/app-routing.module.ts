@@ -6,7 +6,7 @@ import { HomeComponent } from './views/home.component';
 
 
 const routes: Routes = [
-  {path : '',  component : HomeComponent}
+  {path : '',  component : OnboardingComponent}
 ];
 
 @NgModule({
