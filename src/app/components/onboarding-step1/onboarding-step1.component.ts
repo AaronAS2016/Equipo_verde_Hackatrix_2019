@@ -10,6 +10,7 @@ export class OnboardingStep1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
