@@ -31,12 +31,9 @@ import { OnboardingStep3Component } from './components/onboarding-step3/onboardi
     BuscadorComponent,
     OnboardingStep2Component,
     RecomendacionComponent,
-<<<<<<< HEAD
     RecomendacionesComponent,
-    DetalleRecomendacionComponent
-=======
+    DetalleRecomendacionComponent,
     OnboardingStep3Component
->>>>>>> a3a14831f8b7d295ceacfe25cd96c82bde5a7879
   ],
   imports: [
     BrowserModule,
