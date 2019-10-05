@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home.component';
 import { OnboardingHeaderComponent } from './components/onboarding-header/onboarding-header.component';
 import { OnboardingContainerComponent } from './components/onboarding-container/onboarding-container.component';
+import { OnboardingStep1Component } from './components/onboarding-step1/onboarding-step1.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -15,7 +16,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     OnboardingHeaderComponent,
     OnboardingContainerComponent,
+<<<<<<< HEAD
     OnboardingComponent
+=======
+    OnboardingStep1Component
+>>>>>>> ef7ef1784ed09a0b5f77dd3f9005bdba9e61acab
   ],
   imports: [
     BrowserModule,
