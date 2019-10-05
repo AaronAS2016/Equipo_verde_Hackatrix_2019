@@ -15,11 +15,15 @@ export class OnboardingStep1Component implements OnInit {
   ) { }
 
 
-  @Output() selecccion =  new EventEmitter<Array<RestriccionModel>>();
+  @Output() seleccion =  new EventEmitter<Array<RestriccionModel>>();
   restricciones: Array<RestriccionModel>;
   checklistSelection = new SelectionModel<RestriccionModel>();
   ngOnInit() {
     this.restricciones = this.restriccionesService.GetRestricciones();
+  }
+
+  selecciono(){
+    this.seleccion.emit(this.checklistSelection.selected);
   }
 
 }
