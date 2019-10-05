@@ -7,8 +7,9 @@ import { DetalleRecomendacionComponent } from './views/detalle-recomendacion/det
 
 
 const routes: Routes = [
-  { path : '',  component : HomeComponent},
+  { path : '',  component : OnboardingComponent},
   { path : 'onboarding',  component : OnboardingComponent},
+  { path : 'home',  component : HomeComponent},
   { path : 'detalle-recomendacion/:id',  component : DetalleRecomendacionComponent },
 ];
 

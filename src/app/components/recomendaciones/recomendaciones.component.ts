@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { RecomendacionModel } from '../models/recomendacion.model';
 import { RecomendacionService } from 'src/app/services/recomendacion.service';
 import { Router } from '@angular/router';
+import { PerfilService } from 'src/app/services/perfil.service';
 
 @Component({
     selector: 'recomendaciones',
@@ -12,13 +13,18 @@ export class RecomendacionesComponent implements OnInit {
 
     constructor(
         public recomendacionService: RecomendacionService,
+        private perfilService: PerfilService,
         public router: Router
     ) { }
 
-    recomendaciones: RecomendacionModel[] = [];
-
+    puntos: RecomendacionModel[] = [];
+    perfil;
+    recomendaciones: Array<RecomendacionModel> = new Array<RecomendacionModel>();
     ngOnInit() {
-        this.recomendaciones = this.obtenerRecomendaciones();
+        this.puntos = this.obtenerRecomendaciones();
+        console.log(this.puntos);
+        this.perfil = this.perfilService.getPerfil();
+        this.getRecomendados();
     }
 
     obtenerRecomendaciones() {
@@ -30,15 +36,40 @@ export class RecomendacionesComponent implements OnInit {
         this.router.navigate(['/detalle-recomendacion/' + id]);
     }
 
-    restricciones = [{
-        id: 1,
-        descripcion: "Ver",
-        icono: ""
-    },
-    { id: 5, descripcion: 'Moverme', icono: '' }]
+    // restricciones = [{
+    //     id: 1,
+    //     descripcion: "Ver",
+    //     icono: ""
+    // },
+    // { id: 5, descripcion: 'Moverme', icono: '' }]
 
-    filtrar() {
-        this.recomendaciones.filter(recomendacion => recomendacion.restricciones.find(restriccion => this.restricciones.map(res => res.id).includes(restriccion.id)))
+    // filtrar() {
+    //     this.recomendaciones.filter(recomendacion => recomendacion.restricciones.find(restriccion => this.restricciones.map(res => res.id).includes(restriccion.id)))
+    // }
+
+    getRecomendados() {
+        if (this.perfil["1"] != null && this.perfil["2"]) {
+            for (let index = 0; index < this.puntos.length; index++) {
+                const punto = this.puntos[index];
+                var flag = true;
+                console.log('perfil', this.perfil)
+                for (let index = 0; index < this.perfil["1"].length && flag; index++) {
+                    const restriccion = this.perfil["1"][index];
+                    console.log('perfil1',this.perfil["1"]);
+                    console.log(punto.restricciones.findIndex(pr => pr.id == restriccion.id) > -1);
+                    if (punto.restricciones.findIndex(pr => pr.id == restriccion.id) > -1) {
+                        flag = false;
+                    }
+                }
+                if (flag) {
+                    this.recomendaciones.push(punto);
+                }
+            }
+        }
+        else{
+            this.recomendaciones = this.puntos;
+        }
+
+    console.log('recomendaciones', this.recomendaciones);
     }
-
 }

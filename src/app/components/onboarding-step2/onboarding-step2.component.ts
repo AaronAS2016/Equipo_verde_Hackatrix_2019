@@ -28,6 +28,7 @@ export class OnboardingStep2Component implements OnInit {
     else{
       this.seleccionados.push(marcado);
     }
+    this.seleccion.emit(this.seleccionados);
   }
 
   estaSeleccionado(gusto:GustoModel):boolean{

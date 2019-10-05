@@ -19,14 +19,22 @@ export class OnboardingStep3Component implements OnInit {
 
   @Output() seleccion =  new EventEmitter<Array<TransporteModel>>();
   transportes: Array<TransporteModel>;
-  checklistSelection = new SelectionModel<TransporteModel>();
+  checklistSelection = new Array<TransporteModel>();
   ngOnInit() {
     this.transportes = this.transporteService.GetTransportes();
   }
 
 
-  selecciono(){
-    this.seleccion.emit(this.checklistSelection.selected);
+  seleccionar(restriccion){
+    var index = this.checklistSelection.findIndex(g => g.id == restriccion.id)
+    if(index > -1) {
+      this.checklistSelection.splice(index,1);
+    }
+    else{
+      this.checklistSelection.push(restriccion);
+    }
+    this.seleccion.emit(this.checklistSelection)
   }
+
 
 }

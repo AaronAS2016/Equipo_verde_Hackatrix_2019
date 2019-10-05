@@ -34,13 +34,7 @@ export class RecomendacionService {
         estrellas: 4,
         imagen: "https://www.musicnotes.com/images2/promos/store/900x520_piano-min.jpg",
         restricciones: [
-          {
-            id: 1,
-            descripcion: "Ver",
-            icono: ""
-          },
           { id: 2, descripcion: 'Escuchar', icono: '' },
-          { id: 6, descripcion: 'Otros', icono: '' }
         ]
       }),
       new RecomendacionModel({
@@ -51,13 +45,6 @@ export class RecomendacionService {
         estrellas: 4,
         imagen: "http://www.telam.com.ar/advf/imagenes/2017/09/59c8e08548cd1_645x362.jpg",
         restricciones: [
-          {
-            id: 1,
-            descripcion: "Ver",
-            icono: ""
-          },
-          { id: 5, descripcion: 'Moverme', icono: '' },
-          { id: 4, descripcion: 'Moverme con facilidad', icono: '' },
         ]
       }),
       new RecomendacionModel({
@@ -72,9 +59,7 @@ export class RecomendacionService {
             id: 1,
             descripcion: "Ver",
             icono: ""
-          },
-          { id: 5, descripcion: 'Moverme', icono: '' },
-          { id: 6, descripcion: 'Otros', icono: '' }
+          }
         ]
       }),
       new RecomendacionModel({
@@ -89,9 +74,7 @@ export class RecomendacionService {
             id: 1,
             descripcion: "Ver",
             icono: ""
-          },
-          { id: 5, descripcion: 'Moverme', icono: '' },
-          { id: 6, descripcion: 'Otros', icono: '' }
+          }
         ]
       }),
 
@@ -108,7 +91,6 @@ export class RecomendacionService {
             descripcion: "Ver",
             icono: ""
           },
-          { id: 2, descripcion: 'Escuchar', icono: '' },
           { id: 3, descripcion: 'Estar de pie', icono: '' },
         ]
       })
