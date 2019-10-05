@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
+import { OnboardingStep2Component } from './components/onboarding-step2/onboarding-step2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import {MatButtonModule} from '@angular/material/button';
     OnboardingContainerComponent,
     OnboardingStep1Component,
     OnboardingComponent,
-    OnboardingStep1Component
+    OnboardingStep1Component,
+    OnboardingStep2Component
   ],
   imports: [
     BrowserModule,
