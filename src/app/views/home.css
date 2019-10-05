@@ -1,4 +1,7 @@
 .recomendaciones {
     position: relative;
-    top: 140px;
+}
+
+.subtitulo {
+    height: 200px;
 }
