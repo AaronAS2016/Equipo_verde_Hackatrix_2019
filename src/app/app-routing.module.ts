@@ -8,12 +8,9 @@ import { DetalleRecomendacionComponent } from './views/detalle-recomendacion/det
 
 const routes: Routes = [
   {path : '',  component : HomeComponent},
-<<<<<<< HEAD
-  {path : 'onboarding',  component : OnboardingComponent}
-=======
+  {path : 'onboarding',  component : OnboardingComponent},
   { path : 'detalle-recomendacion/:id',  component : DetalleRecomendacionComponent },
   {path : '',  component : OnboardingComponent}
->>>>>>> 25710a7a6e8148e255d989a45bf8a1ea93af3b7e
 ];
 
 @NgModule({
