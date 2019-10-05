@@ -3,7 +3,7 @@
         <div class="restricciones-center">
                 <ng-container *ngFor="let restriccion of restricciones">
                         <div>
-                                <mat-checkbox  class="checkbox-preference" [checked]="checklistSelection.isSelected(restriccion)">{{restriccion.descripcion}}</mat-checkbox>
+                                <mat-checkbox  (change)="selecciono()" class="checkbox-preference" [checked]="checklistSelection.isSelected(restriccion)">{{restriccion.descripcion}}</mat-checkbox>
                         </div>
                 </ng-container>
         </div>
