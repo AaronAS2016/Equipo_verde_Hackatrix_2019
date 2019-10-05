@@ -1,0 +1,22 @@
+.fondo-buscador {
+    background-color: #FFF;
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 80px;
+    text-align: center;
+    height: 50px;
+    position: absolute;
+    top: 275px;
+    left: 15%;
+
+}
+
+.input-buscador {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    top: 12px;
+    position: relative;
+    text-align: center;
+}

@@ -1,3 +1,4 @@
+import { OnboardingComponent } from './components/onboarding/onboarding.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -8,6 +9,7 @@ import { OnboardingHeaderComponent } from './components/onboarding-header/onboar
 import { OnboardingContainerComponent } from './components/onboarding-container/onboarding-container.component';
 import { OnboardingStep1Component } from './components/onboarding-step1/onboarding-step1.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     OnboardingHeaderComponent,
     OnboardingContainerComponent,
-    OnboardingStep1Component
+    OnboardingComponent,
+    OnboardingStep1Component,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
