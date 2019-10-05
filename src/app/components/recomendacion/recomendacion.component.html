@@ -1,1 +1,16 @@
-<h1>Recomendacion</h1>
+<div class="item-recomendacion">
+    <div>
+        <img [src]="recomendacion.imagen">
+    </div>
+    <div>
+        <h4>{{recomendacion.titulo}}</h4>
+        <p class="subtitulo-review">{{recomendacion.reviews}} Reviews</p>
+        <div class="estrellas">
+            <ng-container *ngFor="let strEstrella of recomendacion.obtenerListaEstrellas()">
+                <i class="material-icons">
+                    {{strEstrella}}
+                </i>
+            </ng-container>
+        </div>
+    </div>
+</div>

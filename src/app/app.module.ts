@@ -15,6 +15,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
 import { OnboardingStep2Component } from './components/onboarding-step2/onboarding-step2.component';
+import { RecomendacionComponent } from './components/recomendacion/recomendacion.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { OnboardingStep2Component } from './components/onboarding-step2/onboardi
     OnboardingComponent,
     OnboardingStep1Component,
     BuscadorComponent,
-    OnboardingStep2Component
+    OnboardingStep2Component,
+    RecomendacionComponent
   ],
   imports: [
     BrowserModule,
