@@ -52,3 +52,31 @@ body { margin: 0; font-family: Poppins, "Helvetica Neue", sans-serif; }
  [type="submit"] {
    -webkit-appearance: button;
  }
+
+.fondo {
+    position: absolute;
+    background-color: #008ff7;
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    z-index: -1;
+}
+
+.no-margin {
+    margin: 0!important;
+}
+
+.titulo {
+    font-size: 2em;
+    color: #FFF;
+}
+
+.subtitulo {
+    color: #FFF;
+}
+
+.full-width  {
+    width: 100%;
+}
+

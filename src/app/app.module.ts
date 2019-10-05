@@ -9,6 +9,8 @@ import { OnboardingHeaderComponent } from './components/onboarding-header/onboar
 import { OnboardingContainerComponent } from './components/onboarding-container/onboarding-container.component';
 import { OnboardingStep1Component } from './components/onboarding-step1/onboarding-step1.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
@@ -22,6 +24,7 @@ import { OnboardingStep2Component } from './components/onboarding-step2/onboardi
     OnboardingStep1Component,
     OnboardingComponent,
     OnboardingStep1Component,
+    BuscadorComponent,
     OnboardingStep2Component
   ],
   imports: [
