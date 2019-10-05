@@ -11,12 +11,16 @@ import { OnboardingStep1Component } from './components/onboarding-step1/onboardi
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CommonModule } from '@angular/common';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     OnboardingHeaderComponent,
     OnboardingContainerComponent,
+    OnboardingStep1Component,
     OnboardingComponent,
     OnboardingStep1Component,
     BuscadorComponent
@@ -24,7 +28,10 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatCheckboxModule,
     BrowserAnimationsModule,
+    CommonModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

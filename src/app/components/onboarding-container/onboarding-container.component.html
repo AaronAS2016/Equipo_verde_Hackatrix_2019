@@ -1,1 +1,18 @@
-<p></p>
+<section class="onboarding-container">
+    <nav class="onboarding-nav">
+        <div class="onboarding-nav-title">
+            <p>
+              {{ title }}
+            </p>
+        </div>
+
+        <div class="onboarding-steps">
+            {{ stepStart }} / {{ stepEnd }}
+        </div>
+    </nav>
+
+
+    <div class="onboarding-wrapper">
+        <ng-content></ng-content>
+    </div>
+</section>
