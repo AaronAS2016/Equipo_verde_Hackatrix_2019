@@ -2,5 +2,6 @@
 <app-onboarding-container [title]="title[actualStep - 1]" [stepStart]="actualStep" [stepEnd]="MAX_STEAPS">
     <app-onboarding-step1 *ngIf="actualStep == 1"  [@enterAnimation] (seleccion)="pushSelections($event)"></app-onboarding-step1>
     <app-onboarding-step2 *ngIf="actualStep == 2"  [@enterAnimation] (seleccion)="pushSelections($event)"></app-onboarding-step2>
+    <app-onboarding-step3 *ngIf="actualStep == 3"  [@enterAnimation] (seleccion)="pushSelections($event)"></app-onboarding-step2>
     <button class="btn-continue" (click)="handleClickContine()">continuar</button>
 </app-onboarding-container>
