@@ -1,3 +1,4 @@
+import { OnboardingComponent } from './components/onboarding/onboarding.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -13,7 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     HomeComponent,
     OnboardingHeaderComponent,
-    OnboardingContainerComponent
+    OnboardingContainerComponent,
+    OnboardingComponent
   ],
   imports: [
     BrowserModule,
