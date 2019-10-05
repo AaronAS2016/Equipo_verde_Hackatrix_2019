@@ -1,1 +1,10 @@
-<p>onboarding-step1 works!</p>
+
+<div class="restricciones-wrapper">
+        <div class="restricciones-center">
+                <ng-container *ngFor="let restriccion of restricciones">
+                        <div>
+                                <mat-checkbox  [checked]="checklistSelection.isSelected(restriccion)">{{restriccion.descripcion}}</mat-checkbox>
+                        </div>
+                </ng-container>
+        </div>
+</div>
