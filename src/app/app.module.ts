@@ -1,3 +1,4 @@
+import { OnboardingComponent } from './components/onboarding/onboarding.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,6 +19,8 @@ import {MatButtonModule} from '@angular/material/button';
     OnboardingHeaderComponent,
     OnboardingContainerComponent,
     OnboardingStep1Component,
+    OnboardingComponent,
+    OnboardingStep1Component
   ],
   imports: [
     BrowserModule,
