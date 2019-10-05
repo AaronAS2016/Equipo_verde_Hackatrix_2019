@@ -1,0 +1,14 @@
+.restricciones-wrapper{
+    position: flex;
+}
+
+.restricciones-center{
+    width:80vw;
+    margin:20px 10vw;
+}
+
+
+.checkbox-preference{
+  color:#fff;
+  font-weight: bold;
+}
