@@ -1,4 +1,24 @@
 <div class="contenedor-detalle">
     <img [src]="recomendacion.imagen" class="imagen-portada">
-    <h1>{{recomendacion.titulo}}</h1>
+    <div class="pl-2 pr-2">
+        <div class="titulo-favorito">
+            <h4 class="titulo-detalle mt-4">{{recomendacion.titulo}}</h4>
+            
+        </div>
+
+        <p class="subtitulo-detalle">{{recomendacion.reviews}} Reviews</p>
+        <p class="subtitulo-detalle">{{recomendacion.descripcion}}</p>
+
+        <ng-container *ngFor="let strEstrella of recomendacion.obtenerListaEstrellas()">
+            <i class="material-icons" style="color: white;">
+                {{strEstrella}}
+            </i>
+        </ng-container>
+
+        <div class="boton-contenedor">
+            <button mat-raised-button>Como llegar con Google Maps</button>
+        </div>
+    </div>
+
+
 </div>

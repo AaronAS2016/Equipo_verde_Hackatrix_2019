@@ -6,3 +6,29 @@
 .imagen-portada {
     width: 100%;
 }
+
+.titulo-detalle {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.subtitulo-detalle {
+    color: #FFF;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.boton-contenedor {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-favorito {
+
+}
+
+.boton-contenedor button {
+    color: #008ff7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

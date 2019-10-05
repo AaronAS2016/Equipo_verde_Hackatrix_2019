@@ -30,4 +30,15 @@ export class RecomendacionesComponent implements OnInit {
         this.router.navigate(['/detalle-recomendacion/' + id]);
     }
 
+    restricciones = [{
+        id: 1,
+        descripcion: "Ver",
+        icono: ""
+    },
+    { id: 5, descripcion: 'Moverme', icono: '' }]
+
+    filtrar() {
+        this.recomendaciones.filter(recomendacion => recomendacion.restricciones.find(restriccion => this.restricciones.map(res => res.id).includes(restriccion.id)))
+    }
+
 }

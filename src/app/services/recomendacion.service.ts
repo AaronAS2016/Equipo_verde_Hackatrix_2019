@@ -83,7 +83,7 @@ export class RecomendacionService {
         descripcion: "",
         reviews: 54,
         estrellas: 5,
-        imagen: "https://media-cdn.tripadvisor.com/media/photo-s/0d/e9/61/e1/emir-evelyn-at-la-boca.jpg",
+        imagen: "https://s3-us-west-2.amazonaws.com/denomades/blog/wp-content/uploads/2016/01/05164549/tango-buenos-aires-mejores-boliches-ok-696x392.jpg",
         restricciones: [
           {
             id: 1,
@@ -101,7 +101,7 @@ export class RecomendacionService {
         descripcion: "",
         reviews: 33,
         estrellas: 3,
-        imagen: "https://turismo.buenosaires.gob.ar/sites/turismo/files/parque_ninosa.jpg",
+        imagen: "https://cdn.civitatis.com/argentina/buenos-aires/galeria/thumbs/parque-tres-febrero-rosaleda.jpg",
         restricciones: [
           {
             id: 1,
