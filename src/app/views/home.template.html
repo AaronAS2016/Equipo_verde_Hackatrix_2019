@@ -2,7 +2,7 @@
 <div class="row no-margin">
     <div class="col-xl-12">
         <h1 class="text-center titulo font-bold mt-5">¡Bienvenido!</h1>
-        
+
         <p class="text-center subtitulo font-bold mt-5">¡Usá el buscador para encotrar tours o elige en base a las
             recomendaciones que se ajustan a tus gustos y
             necesidades!</p>
@@ -12,7 +12,10 @@
 
         <div class="recomendaciones">
             <div class="text-center full-width">
-                <h5>Recomendados para vos</h5>
+                <h5 class="mb-5">Recomendados para vos</h5>
+                <ng-container *ngFor="let recomendacion of recomendaciones">
+                    <recomendacion [recomendacion]="recomendacion"></recomendacion>
+                </ng-container>
             </div>
         </div>
 
