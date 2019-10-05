@@ -1,0 +1,3 @@
+<ng-container *ngFor="let recomendacion of recomendaciones">
+    <recomendacion [recomendacion]="recomendacion" (click)="navegarRecomendacion(recomendacion.id)"></recomendacion>
+</ng-container>
