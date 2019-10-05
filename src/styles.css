@@ -2,8 +2,7 @@
 
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 html, body {
-  height: 100vh;
-  height: auto;
+
 }
 body { margin: 0; font-family: Poppins, "Helvetica Neue", sans-serif; }
 /**

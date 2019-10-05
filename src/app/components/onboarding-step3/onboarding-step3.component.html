@@ -1,0 +1,10 @@
+
+<div class="restricciones-wrapper">
+        <div class="restricciones-center">
+                <ng-container *ngFor="let transporte of transportes">
+                        <div>
+                                <mat-checkbox (change)="selecciono()" class="checkbox-preference" [checked]="checklistSelection.isSelected(transporte)">{{transporte.descripcion}}</mat-checkbox>
+                        </div>
+                </ng-container>
+        </div>
+</div>

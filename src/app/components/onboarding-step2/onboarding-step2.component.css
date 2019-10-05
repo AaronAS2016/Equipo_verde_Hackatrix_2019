@@ -1,19 +1,40 @@
+:host{
+  width: 100%;
+}
 .gustos-grilla {
     margin-top:10px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 120px));
     grid-row-gap: 20px;
     grid-column-gap: 10px;
-    justify-content: center;	
+    justify-content: center;
 }
 .gustos-grilla > div {
     background: #EDE7F6;
-    padding: 10px;
     height:120px;
     border-radius: 5px;
     text-align: center;
-    vertical-align: center;
+    background-size: cover;
 }
-.gustos-scroller{
-    
+.gusto-titulo-wrapper{
+    position: relative;
+    height:100%;
+    width:100%;
+    background-color: #0072bb85;
+    transition: .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gusto-titulo{
+    position:absolute;
+    margin: auto;
+    color:white;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+.gusto-seleccionado{
+    background-color:unset!important;
+    text-shadow: 1px 1px 2px black;
 }

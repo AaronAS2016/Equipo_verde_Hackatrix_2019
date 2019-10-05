@@ -18,6 +18,7 @@ import { OnboardingStep2Component } from './components/onboarding-step2/onboardi
 import { RecomendacionComponent } from './components/recomendacion/recomendacion.component';
 import { RecomendacionesComponent } from './components/recomendaciones/recomendaciones.component';
 import { DetalleRecomendacionComponent } from './views/detalle-recomendacion/detalle-recomendacion.component';
+import { OnboardingStep3Component } from './components/onboarding-step3/onboarding-step3.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,8 +31,12 @@ import { DetalleRecomendacionComponent } from './views/detalle-recomendacion/det
     BuscadorComponent,
     OnboardingStep2Component,
     RecomendacionComponent,
+<<<<<<< HEAD
     RecomendacionesComponent,
     DetalleRecomendacionComponent
+=======
+    OnboardingStep3Component
+>>>>>>> a3a14831f8b7d295ceacfe25cd96c82bde5a7879
   ],
   imports: [
     BrowserModule,
